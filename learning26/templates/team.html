@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>team</h1>
+    <h1> teamname : {{name}}</h1>
+    <h1> TROPHY : {{trophy}} Min</h1>
+    <h2> PLAYERLIST : {{playerlist}}</h2>
+    {% for i in playerlist%}
+        <h3>{{i}}</h3>
+    {% endfor%}   
+    
+    <h1>if</h1>
+    {% if trophy <= 5%}
+       <h2>"the tean loose"</h2>
+    {% else%}
+        <h2>"the team win"</h2>
+    {% endif %}       
+    
+
+</body>
+</html>
