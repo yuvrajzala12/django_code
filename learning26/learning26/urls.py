@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from django.urls import include
 #from views import test
 
 #localhost:8000/test/
@@ -28,5 +29,8 @@ urlpatterns = [
     path("",views.home),
     path("recipe/",views.recipe),
     path("movies/",views.movies),
-    path("team/",views.team)
+    path("team/",views.team),
+
+    # student page
+    path("student/",include("student.urls")),
 ]
