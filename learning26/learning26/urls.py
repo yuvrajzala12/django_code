@@ -33,4 +33,7 @@ urlpatterns = [
 
     # student page
     path("student/",include("student.urls")),
+    path("localgem/",include("localgem.urls")),
+    path("employee/",include("employee.urls")),
+
 ]
