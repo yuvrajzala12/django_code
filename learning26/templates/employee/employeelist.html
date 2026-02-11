@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>employee list </h1>
+    {% for emp in employee%}
+        {{emp.Employeename}}
+        {{emp.Employeeid}}
+        {{emp.Employee_salary}}
+        {{emp.Employee_exp}}
+    {%endfor %}
+
+    <table>
+        <thead>
+            <tr>
+                <th>Employeename</th>
+                <th>Employeeid</th>
+                <th>Employee_salary</th>
+                <th>Employee_exp</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for emp in employees%}
+            <tr>
+                <td>{{emp.Employeename}}</td>
+                <td>{{emp.Employeeid}}</td>
+                <td>{{emp.Employee_salary}}</td>
+                <td>{{emp.Employee_exp}}</td>
+            </tr>
+            {% endfor%}
+        </tbody>
+    </table>
+
+
+</body>
+</html>
